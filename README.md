@@ -63,10 +63,6 @@ WHATSAPP_ACCESS_TOKEN=your_access_token
 OPENAI_API_KEY=your_openai_api_key
 
 ---
-
-
-
-
 ###4. Running the Bot
 Start your n8n instance.
 

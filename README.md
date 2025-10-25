@@ -1,4 +1,6 @@
 <img width="1366" height="767" alt="Screenshot 2025-10-25 210526" src="https://github.com/user-attachments/assets/3d5f69b2-5d45-43b8-84ae-32e095428413" />
+
+ 
  # WhatsApp AI Bot n8n Workflow
 
 This repository contains an **n8n workflow** for handling WhatsApp messages using the **WhatsApp Cloud API**.  

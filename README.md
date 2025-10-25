@@ -1,7 +1,7 @@
 # WhatsApp AI Bot n8n Workflow
 
-This repository contains an **n8n workflow** for handling WhatsApp messages via the **WhatsApp Cloud API**.  
-It supports **text, voice, image, and document messages**, with AI-powered responses using **OpenAI**.
+This repository contains an **n8n workflow** for handling WhatsApp messages using the **WhatsApp Cloud API**.  
+It supports **text, voice, image, and document messages**, with AI-powered responses using **OpenAI GPT models**.
 
 ---
 
@@ -12,7 +12,7 @@ It supports **text, voice, image, and document messages**, with AI-powered respo
 - Analyze images and generate descriptive context.  
 - AI-powered responses using OpenAI GPT models.  
 - Optional voice replies to user messages.  
-- Maintain conversation context with memory buffer.  
+- Maintain conversation context with a memory buffer.  
 
 ---
 
@@ -22,14 +22,14 @@ It supports **text, voice, image, and document messages**, with AI-powered respo
 
 1. Create a [Facebook Developer App](https://developers.facebook.com/).  
 2. Go to **WhatsApp > Getting Started** and set up your **WhatsApp Business Account**.  
-3. Obtain these credentials:
+3. Obtain the following credentials:
 
 | Credential        | Description                           |
 |------------------|---------------------------------------|
-| Client ID         | YOUR_WHATSAPP_CLIENT_ID               |
-| Client Secret     | YOUR_WHATSAPP_CLIENT_SECRET           |
-| Phone Number ID   | YOUR_WHATSAPP_PHONE_NUMBER_ID         |
-| Access Token      | YOUR_WHATSAPP_ACCESS_TOKEN            |
+| Client ID         | Your WhatsApp App Client ID           |
+| Client Secret     | Your WhatsApp App Client Secret       |
+| Phone Number ID   | Your WhatsApp Business Phone Number ID|
+| Access Token      | Your WhatsApp Access Token            |
 
 > **Keep credentials secure**. Do not commit them to GitHub.
 
@@ -37,8 +37,8 @@ It supports **text, voice, image, and document messages**, with AI-powered respo
 
 ### 2. n8n Workflow
 
-1. Import the workflow JSON (`whatsapp-n8n-workflow.json`) into n8n.  
-2. Update nodes with your credentials:
+1. Import the workflow JSON (`whatsapp-n8n-workflow.json`) into your n8n instance.  
+2. Update the workflow nodes with your credentials:
 
 | Node                         | Field                                  |
 |-------------------------------|---------------------------------------|
@@ -49,24 +49,15 @@ It supports **text, voice, image, and document messages**, with AI-powered respo
 
 ---
 
-### 3. Environment Variables (Optional but Recommended)
+### 3. Environment Variables (Recommended)
 
 ```bash
-WHATSAPP_CLIENT_ID=YOUR_WHATSAPP_CLIENT_ID
-WHATSAPP_CLIENT_SECRET=YOUR_WHATSAPP_CLIENT_SECRET
-WHATSAPP_PHONE_NUMBER_ID=YOUR_WHATSAPP_PHONE_NUMBER_ID
-WHATSAPP_ACCESS_TOKEN=YOUR_WHATSAPP_ACCESS_TOKEN
-OPENAI_API_KEY=YOUR_OPENAI_API_KEY
-
-
-
-
-
-
-
-
+WHATSAPP_CLIENT_ID=your_client_id
+WHATSAPP_CLIENT_SECRET=your_client_secret
+WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
+WHATSAPP_ACCESS_TOKEN=your_access_token
+OPENAI_API_KEY=your_openai_api_key
 4. Running the Bot
-
 Start your n8n instance.
 
 The WhatsApp Trigger node listens for incoming messages.
@@ -76,19 +67,17 @@ Messages are routed and processed by type (text, voice, image, document).
 Responses (text or voice) are sent automatically.
 
 5. Notes
-
 Voice messages are converted to text before AI processing.
 
-Images are analyzed using OpenAI Vision models.
+Images are analyzed using OpenAI vision models.
 
 Memory buffer allows context-aware responses.
 
 Customize bot personality via the AI Response Engine node system prompt.
 
 6. Contributing
-
 Fork the repository.
 
-Make improvements.
+Make improvements or fixes.
 
 Submit a pull request with a clear description of changes.

@@ -1,4 +1,4 @@
-make me professional read me # WhatsApp AI Bot n8n Workflow
+ # WhatsApp AI Bot n8n Workflow
 
 This repository contains an **n8n workflow** for handling WhatsApp messages using the **WhatsApp Cloud API**.  
 It supports **text, voice, image, and document messages**, with AI-powered responses using **OpenAI GPT models**.

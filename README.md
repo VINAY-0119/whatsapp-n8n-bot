@@ -1,4 +1,5 @@
-<img width="1366" height="767" alt="Screenshot 2025-10-25 210526" src="https://github.com/user-attachments/assets/3d5f69b2-5d45-43b8-84ae-32e095428413" />
+<img width="1295" height="354" alt="Screenshot 2025-10-25 210526 (2)" src="https://github.com/user-attachments/assets/61738804-4430-4c17-b302-3b72ce1cb350" />
+
 
  
  # WhatsApp AI Bot n8n Workflow
@@ -62,6 +63,9 @@ WHATSAPP_ACCESS_TOKEN=your_access_token
 OPENAI_API_KEY=your_openai_api_key
 
 ---
+
+
+
 
 ###4. Running the Bot
 Start your n8n instance.

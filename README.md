@@ -57,7 +57,16 @@ WHATSAPP_CLIENT_SECRET=YOUR_WHATSAPP_CLIENT_SECRET
 WHATSAPP_PHONE_NUMBER_ID=YOUR_WHATSAPP_PHONE_NUMBER_ID
 WHATSAPP_ACCESS_TOKEN=YOUR_WHATSAPP_ACCESS_TOKEN
 OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+
+
+
+
+
+
+
+
 4. Running the Bot
+
 Start your n8n instance.
 
 The WhatsApp Trigger node listens for incoming messages.
@@ -67,6 +76,7 @@ Messages are routed and processed by type (text, voice, image, document).
 Responses (text or voice) are sent automatically.
 
 5. Notes
+
 Voice messages are converted to text before AI processing.
 
 Images are analyzed using OpenAI Vision models.
@@ -76,6 +86,7 @@ Memory buffer allows context-aware responses.
 Customize bot personality via the AI Response Engine node system prompt.
 
 6. Contributing
+
 Fork the repository.
 
 Make improvements.
